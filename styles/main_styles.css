@@ -697,6 +697,7 @@ section
 	font-weight: 900;
 	color: #272727;
 	line-height: 1.0398;
+    text-shadow: 2px 2px #aaa;
 }
 .home_text
 {
@@ -710,6 +711,7 @@ section
 	font-weight: 500;
 	color: #747474;
 	line-height: 1.75;
+    text-shadow: 1px 0px #ddd
 }
 .home_button
 {
