@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudama Health</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+    <style>
+        .bd-placeholder-img {
+            font-family: "Arial", sans-serif;
+            text-anchor: middle;
+            vertical-align: middle;
+            color: #868e96;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 32px;
+            }
+
+            .cover-container {
+                max-width: 80%;
+            }
+
+            .px-3 {
+                max-width: 900px;
+            }
+        }
+
+        .lead {
+            padding-top: 40px !important;
+        }
+
+        footer {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <img src="logo.png" alt="Sudama Health"
+                class="bd-placeholder-img bd-placeholder-img-lg d-inline-block align-top"
+                width="200" height="200">
+            <h1>Sudama Health</h1>
+        </header>
+
+        <main class="px-3 mx-auto">
+            <h2>Transforming Remote Doctor Consultations</h2>
+            <p class="lead">Ready to connect? Fill out the form!</p>
+            <form class="row" id="contactform">
+                <div class="mb-3 col-md-4">
+                    <label for="uname" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="uname"
+                        placeholder="Your Name">
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone"
+                        placeholder="Your Phone Number">
+                </div>
+                <div class="mb-3 col-md-4">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email"
+                        placeholder="youremail@example.com">
+                </div>
+                <div class="mb-3 col-12">
+                    <label for="message" class="form-label">Tell us a little
+                        about yourself and why you're reaching out</label>
+                    <textarea class="form-control" id="message" rows="5"
+                        placeholder="Write a brief introduction and your reason for contacting us"></textarea>
+                </div>
+                <div class="col-12">
+                    <button id="submit-form" name="btnSubmit" type="submit"
+                        class="btn btn-primary d-block mx-auto btnSubmit">Reach
+                        Out</button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="mt-auto text-muted">
+            <p>&copy; 2024 Sudama Health</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script language="javascript">
+        var $form = $('form#contactform'),
+            url = 'https://script.google.com/macros/s/AKfycbz4GZGTOUAhPc-FCZLIPcHud1yh3zvcwW5rs6LOLgBZ5Fngx53GrQYSs2xAoZGIOFIy/exec'
+
+
+        $('#submit-form').on('click', function (e) {
+            e.preventDefault();
+            var formData = {
+                name: $('#uname').val(),
+                phone: $('#phone').val(),
+                email: $('#email').val(),
+                message: $('#message').val()
+            };
+            var jqxhr = $.ajax({
+                crossDomain: true,
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: formData,
+                success: function (result) { alert("Form submitted"); }
+            })
+            alert("We will reach out to you soon");
+            $('#contactform')[0].reset();
+        })
+
+    </script>
+</body>
+
+</html>
