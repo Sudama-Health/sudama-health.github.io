@@ -68,6 +68,10 @@
             .px-3 {
                 max-width: 900px;
             }
+
+            .map-container{
+                width: 768px;
+            }
         }
 
         .name {
@@ -142,7 +146,7 @@
 
         .map-link:hover {
             color: #fff;
-            background-color: rgba(46, 135, 255, 0.5);
+            background-color: rgb(46, 59, 255);
         }
 
         .btnWhatsapp {
@@ -193,7 +197,7 @@
         }
 
         .language-btn {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(46, 135, 255, 0.5);
             color: white;
             border: 1px solid rgba(255, 255, 255, 0.4);
             padding: 8px 16px;
@@ -204,8 +208,9 @@
         }
 
         .language-btn.active {
-            background-color: rgba(46, 135, 255, 0.5);
+            background-color: rgba(46, 135, 255, 1);
             border-color: rgba(46, 135, 255, 0.8);
+            font-weight: bold;
         }
 
         .language-btn:hover {
@@ -219,12 +224,12 @@
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark background">
-       <!-- Google Tag Manager (noscript) -->
-       <noscript><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5P8W97F6"
-        height="0" width="0"
-        style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5P8W97F6"
+            height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Language Selector -->
     <div class="language-selector">
@@ -239,7 +244,8 @@
             <img src="sudama_logo.webp" alt="Sudama"
                 class="bd-placeholder-img bd-placeholder-img-lg d-inline-block align-top"
                 width="200" height="200">
-            <h1 class="name">SUDAMA</h1>
+            <h1 class="name" lang="en">SUDAMA</h1>
+            <h1 class="name" lang="kn">ಸುದಾಮ</h1>
         </header>
 
         <main class="px-3 mx-auto text-shadow">
@@ -258,8 +264,10 @@
 
                 <div class="location-container">
                     <h4><i class="fa fa-map-marker"></i> Visit Us At</h4>
-                    <p><b>Sudama Clinic,</b> <br/>No 02, Lakshmisagara Road, <br/>opp. Svr Medicals, <br/>Hale, Chandapura, Bommasandra, <br/>Bengaluru,  <br/>Karnataka 560099
-                        </p>
+                    <p><b>Sudama Clinic,</b> <br />No 02, Lakshmisagara Road,
+                        <br />opp. Svr Medicals, <br />Hale, Chandapura,
+                        Bommasandra, <br />Bengaluru, <br />Karnataka 560099
+                    </p>
                 </div>
             </div>
 
@@ -278,37 +286,40 @@
 
                 <div class="location-container">
                     <h4><i class="fa fa-map-marker"></i> ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ</h4>
-                    <p><b>ಸುದಾಮ ಕ್ಲಿನಿಕ್,</b> <br/>No 02, ಲಕ್ಷ್ಮಿಸಾಗರ ರಸ್ತೆ, <br/>ಎಸ್‌ವಿಆರ್ ಮೆಡಿಕಲ್ಸ್ ಎದುರು, <br/>ಹಳೆ, ಚಂದಾಪುರ, ಬೊಮ್ಮಸಂದ್ರ, <br/>ಬೆಂಗಳೂರು, <br/>ಕರ್ನಾಟಕ 560098</p>
+                    <p><b>ಸುದಾಮ ಕ್ಲಿನಿಕ್,</b> <br />No 02, ಲಕ್ಷ್ಮಿಸಾಗರ ರಸ್ತೆ,
+                        <br />ಎಸ್‌ವಿಆರ್ ಮೆಡಿಕಲ್ಸ್ ಎದುರು, <br />ಹಳೆ, ಚಂದಾಪುರ,
+                        ಬೊಮ್ಮಸಂದ್ರ, <br />ಬೆಂಗಳೂರು, <br />ಕರ್ನಾಟಕ 560098</p>
                 </div>
             </div>
 
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d243.16493479077488!2d77.7119352!3d12.8019316!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1732093430011!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.636807252739!2d77.7117653!3d12.802070899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d7c772513d9%3A0x26b076056ef1e941!2sSudama%20Clinic!5e0!3m2!1sen!2sin!4v1732106397393!5m2!1sen!2sin"
+                    style="border:0;"
                     allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
 
             <div class="map-links">
                 <!-- English Links -->
                 <div lang="en">
-                    <a href="https://maps.app.goo.gl/kFfEwWhPFrG8KRdU6"
+                    <a href="https://maps.app.goo.gl/9HGFySTM9XsnUCY77"
                         target="_blank" class="map-link">
                         <i class="fa fa-map"></i> View on Maps
                     </a>
-                    <a href="https://www.google.com/maps/dir//12.8020921,77.7118179/@12.8019316,77.7119352,21z/data=!4m2!4m1!3e3?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                    <a href="https://www.google.com/maps/dir/Sudama+Clinic,+02,+Lakshmisagara+Rd,+opp.+Svr+Medicals,+Hale,+Chandapura,+Bengaluru,+Bommasandra,+Karnataka+560099/''/@12.8021514,77.6705659,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae6d7c772513d9:0x26b076056ef1e941!2m2!1d77.7117653!2d12.8020709!1m5!1m1!1s0x3bae6d7c772513d9:0x26b076056ef1e941!2m2!1d77.7117653!2d12.8020709!3e3?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank" class="map-link">
                         <i class="fa fa-location-arrow"></i> Get Directions
                     </a>
                 </div>
                 <!-- Kannada Links -->
                 <div lang="kn">
-                    <a href="https://maps.app.goo.gl/kFfEwWhPFrG8KRdU6"
+                    <a href="https://maps.app.goo.gl/9HGFySTM9XsnUCY77"
                         target="_blank" class="map-link">
                         <i class="fa fa-map"></i> ನಕ್ಷೆಯಲ್ಲಿ ನೋಡಿ
                     </a>
-                    <a href="https://www.google.com/maps/dir//12.8020921,77.7118179/@12.8019316,77.7119352,21z/data=!4m2!4m1!3e3?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                    <a href="https://www.google.com/maps/dir/Sudama+Clinic,+02,+Lakshmisagara+Rd,+opp.+Svr+Medicals,+Hale,+Chandapura,+Bengaluru,+Bommasandra,+Karnataka+560099/''/@12.8021514,77.6705659,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae6d7c772513d9:0x26b076056ef1e941!2m2!1d77.7117653!2d12.8020709!1m5!1m1!1s0x3bae6d7c772513d9:0x26b076056ef1e941!2m2!1d77.7117653!2d12.8020709!3e3?hl=en&entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank" class="map-link">
                         <i class="fa fa-location-arrow"></i> ದಾರಿ ತೋರಿಸಿ
                     </a>
