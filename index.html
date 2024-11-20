@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sudama Health - Get nurse assisted tele-consultations with our expert doctors, diagnostic tests and medicines at your home.">
-    <title>Sudama Health</title>
+    <meta name="description"
+        content="Sudama Health - A telemedicine clinic offering expert doctor consultations, diagnostic tests, and medicine delivery in Bangalore">
+    <title>Sudama Health - Telemedicine Clinic</title>
     <!-- Google tag (gtag.js) -->
     <script async
         src="https://www.googletagmanager.com/gtag/js?id=G-W19J114VRG"></script>
@@ -13,7 +14,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-W19J114VRG');
     </script>
     <!-- End Google Tag -->
@@ -86,6 +86,65 @@
             margin-top: 50px;
         }
 
+        .services {
+            margin-top: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .location-container {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .map-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .map-link {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: rgba(46, 135, 255, 1);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .map-link:hover {
+            color: #fff;
+            background-color: rgba(46, 135, 255, 0.5);
+        }
+
         .btnWhatsapp {
             padding: 10px;
             --bs-btn-bg: #25D366;
@@ -96,14 +155,13 @@
             --bs-btn-active-border-color: #1d994b;
             --bs-btn-hover-border-color: #1d994b;
             text-decoration: none;
-            margin-top: 30px;
-            margin-bottom: 80px;
+            margin-top: 10px;
+            margin-bottom: 30px;
         }
 
         .WhatsappLink {
             text-decoration: none;
             margin-bottom: 40px;
-
         }
 
         .background {
@@ -121,16 +179,61 @@
         footer.fixed-bottom {
             z-index: -1;
         }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            /* Added to stack buttons vertically */
+            gap: 10px;
+            /* Added spacing between buttons */
+        }
+
+        .language-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-btn.active {
+            background-color: rgba(46, 135, 255, 0.5);
+            border-color: rgba(46, 135, 255, 0.8);
+        }
+
+        .language-btn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        [lang="kn"] {
+            display: none;
+        }
     </style>
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark background">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5P8W97F6"
-            height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+       <!-- Google Tag Manager (noscript) -->
+       <noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5P8W97F6"
+        height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="language-btn"
+            onclick="changeLanguage('kn')">ಕನ್ನಡ</button>
+        <button class="language-btn active"
+            onclick="changeLanguage('en')">English</button>
+    </div>
+
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto text-shadow">
             <img src="sudama_logo.webp" alt="Sudama"
@@ -140,16 +243,98 @@
         </header>
 
         <main class="px-3 mx-auto text-shadow">
-            <h2>Your health companion</h2>
-            <h5 class="message">Get nurse assisted tele-consultations with our
-                expert doctors, diagnostic tests and medicines at your home.
-            </h5>
+            <!-- English Content -->
+            <div lang="en">
+                <h2>Your health companion</h2>
+                <h5 class="message">Professional healthcare near you
+                </h5>
+
+                <ul class="services">
+                    <li><i class="fa fa-user-md"></i> Expert Doctor
+                        Consultations</li>
+                    <li><i class="fa fa-flask"></i> Comprehensive Lab Tests</li>
+                    <li><i class="fa fa-medkit"></i> Medicine Delivery</li>
+                </ul>
+
+                <div class="location-container">
+                    <h4><i class="fa fa-map-marker"></i> Visit Us At</h4>
+                    <p>Sudama Clinic, Chandapura, Off Hosur Road, Near Five Star
+                        Chicken, Bengaluru</p>
+                </div>
+            </div>
+
+            <!-- Kannada Content -->
+            <div lang="kn">
+                <h2>ನಿಮ್ಮ ಆರೋಗ್ಯ ಸಂಗಾತಿ</h2>
+                <h5 class="message">ನಿಮ್ಮ ಸಮೀಪದಲ್ಲಿ ವೃತ್ತಿಪರ ಆರೋಗ್ಯ ಸೇವೆ
+                </h5>
+
+                <ul class="services">
+                    <li><i class="fa fa-user-md"></i> ತಜ್ಞ ವೈದ್ಯರ ಸಮಾಲೋಚನೆ</li>
+                    <li><i class="fa fa-flask"></i> ಸಮಗ್ರ ಪ್ರಯೋಗಾಲಯ ಪರೀಕ್ಷೆಗಳು
+                    </li>
+                    <li><i class="fa fa-medkit"></i> ಔಷಧಿ ವಿತರಣೆ</li>
+                </ul>
+
+                <div class="location-container">
+                    <h4><i class="fa fa-map-marker"></i> ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ</h4>
+                    <p>ಸುದಾಮ ಕ್ಲಿನಿಕ್, ಚಂದಾಪುರ, ಹೊಸೂರು ರಸ್ತೆ, ಫೈವ್ ಸ್ಟಾರ್ ಚಿಕನ್
+                        ಹತ್ತಿರ, ಬೆಂಗಳೂರು</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d243.16493479077488!2d77.7119352!3d12.8019316!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1732093430011!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="map-links">
+                <!-- English Links -->
+                <div lang="en">
+                    <a href="https://maps.app.goo.gl/kFfEwWhPFrG8KRdU6"
+                        target="_blank" class="map-link">
+                        <i class="fa fa-map"></i> View on Maps
+                    </a>
+                    <a href="https://www.google.com/maps/dir//12.8020921,77.7118179/@12.8019316,77.7119352,21z/data=!4m2!4m1!3e3?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="map-link">
+                        <i class="fa fa-location-arrow"></i> Get Directions
+                    </a>
+                </div>
+                <!-- Kannada Links -->
+                <div lang="kn">
+                    <a href="https://maps.app.goo.gl/kFfEwWhPFrG8KRdU6"
+                        target="_blank" class="map-link">
+                        <i class="fa fa-map"></i> ನಕ್ಷೆಯಲ್ಲಿ ನೋಡಿ
+                    </a>
+                    <a href="https://www.google.com/maps/dir//12.8020921,77.7118179/@12.8019316,77.7119352,21z/data=!4m2!4m1!3e3?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="map-link">
+                        <i class="fa fa-location-arrow"></i> ದಾರಿ ತೋರಿಸಿ
+                    </a>
+                </div>
+            </div>
+
             <a href="https://wa.me/918123686585?text=I%20want%20a%20doctors%20appointment%20at"
                 target="_blank" class="WhatsappLink">
-                <button
-                    class="btn btn-primary d-block mx-auto btnWhatsapp">Connect
-                    on &nbsp;<i class="fa fa-whatsapp"
-                        style="font-size:24px"></i>&nbsp; Whatsapp</button></a>
+                <!-- English Button -->
+                <div lang="en">
+                    <button class="btn btn-primary d-block mx-auto btnWhatsapp"
+                        lang="en">
+                        Connect on &nbsp;<i class="fa fa-whatsapp"
+                            style="font-size:24px"></i>&nbsp; Whatsapp
+                    </button>
+                </div>
+                <!-- Kannada Button -->
+                <div lang="kn">
+                    <button class="btn btn-primary d-block mx-auto btnWhatsapp"
+                        lang="kn">
+                        ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ &nbsp;<i class="fa fa-whatsapp"
+                            style="font-size:24px"></i>&nbsp; ಸಂಪರ್ಕಿಸಿ
+                    </button>
+                </div>
+            </a>
         </main>
 
         <footer class="mt-auto text-muted fixed-bottom footer-fixed">
@@ -160,6 +345,37 @@
             <p>&copy; 2024 Sudama Health</p>
         </footer>
     </div>
+
+    <script>
+        function changeLanguage(lang) {
+            // Update active button state
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(lang) ||
+                    (lang === 'kn' && btn.textContent === 'ಕನ್ನಡ')) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Show/hide content based on language
+            document.querySelectorAll('[lang]:not(html)').forEach(element => {
+                if (element.getAttribute('lang') === lang) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+            document.querySelectorAll('html').forEach(html => {
+                html.style.display = 'block';
+            })
+        }
+
+        // Initialize with English
+        changeLanguage('en');
+    </script>
 </body>
 
 </html>
