@@ -1,0 +1,41 @@
+- id: services_title
+  translation: "Our Services"
+
+- id: services_doctor
+  translation: "Expert Doctor Consultations"
+
+- id: services_lab
+  translation: "Comprehensive Lab Tests"
+
+- id: services_medicine
+  translation: "Medicine Delivery"
+
+- id: location_title
+  translation: "Visit Us At"
+
+- id: whatsapp_button
+  translation: "Connect on Whatsapp"
+
+- id: site_logo_alt
+  translation: "Logo of the Sudama Health"
+
+- id: view_on_maps
+  translation: "View on Maps"
+
+- id: get_directions
+  translation: "Get Directions"
+
+- id: lab_test_packages
+  translation: "Lab Test Packages"
+
+- id: book_an_appointment
+  translation: "Book an Appointment"
+
+- id: home
+  translation: "Home"
+
+- id: your_health_companion
+  translation: "Your health companion"
+
+- id: professional_healthcare_near_you
+  translation: "Professional healthcare near you"

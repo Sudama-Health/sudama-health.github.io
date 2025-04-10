@@ -1,0 +1,41 @@
+- id: services_title
+  translation: "ನಮ್ಮ ಸೇವೆಗಳು"
+
+- id: services_doctor
+  translation: "ತಜ್ಞ ವೈದ್ಯರ ಸಮಾಲೋಚನೆ"
+
+- id: services_lab
+  translation: "ಸಮಗ್ರ ಪ್ರಯೋಗಾಲಯ ಪರೀಕ್ಷೆಗಳು"
+
+- id: services_medicine
+  translation: "ಔಷಧಿ ವಿತರಣೆ"
+
+- id: location_title
+  translation: "ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ"
+
+- id: whatsapp_button
+  translation: "ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಸಂಪರ್ಕಿಸಿ"
+
+- id: site_logo_alt
+  translation: "ಸುಡಮಾ ಹೆಲ್ತ್ ನ ಲೋಗೋ"
+
+- id: view_on_maps
+  translation: "ನಕ್ಷೆಗಳಲ್ಲಿ ವೀಕ್ಷಿಸಿ"
+
+- id: get_directions
+  translation: "ನಿರ್ದೇಶನಗಳನ್ನು ಪಡೆಯಿರಿ"
+
+- id: lab_test_packages
+  translation: "ಲ್ಯಾಬ್ ಪರೀಕ್ಷಾ ಪ್ಯಾಕೇಜುಗಳು"
+
+- id: book_an_appointment
+  translation: "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಬುಕ್ ಮಾಡಿ"
+
+- id: home
+  translation: "ಮನೆ"
+
+- id: your_health_companion
+  translation: "ನಿಮ್ಮ ಆರೋಗ್ಯ ಸಂಗಾತಿ"
+
+- id: professional_healthcare_near_you
+  translation: "ನಿಮ್ಮ ಸಮೀಪದಲ್ಲಿ ವೃತ್ತಿಪರ ಆರೋಗ್ಯ ಸೇವೆ"

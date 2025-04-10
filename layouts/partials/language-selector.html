@@ -1,0 +1,9 @@
+<!-- layouts/partials/language-selector.html -->
+<div class="language-selector">
+    {{ range $.AllTranslations }}
+        <a href="{{ .Permalink }}" 
+           class="language-btn {{ if eq .Language.Lang $.Language.Lang }}active{{ end }}">
+            {{ .Language.LanguageName }}
+        </a>
+    {{ end }}
+</div>

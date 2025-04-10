@@ -2,3 +2,14 @@ wai
 waiReport
 modules
 lib
+public
+/resources/_gen/
+
+hugo.exe
+hugo.linux
+hugo.darwin
+
+.DS_Store
+node_modules
+dist
+tmp

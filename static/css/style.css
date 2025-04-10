@@ -1,0 +1,194 @@
+/* assets/css/main.css */
+.bd-placeholder-img {
+    font-family: "Arial", sans-serif;
+    text-anchor: middle;
+    vertical-align: middle;
+    color: #868e96;
+}
+
+@media (max-height: 700px) {
+    .message {
+        background-color: #2e87ff;
+    }
+
+    .footer-fixed {
+        display: none;
+    }
+
+    .footer-long {
+        display: block;
+    }
+}
+
+@media (min-height: 700px) {
+    .footer-fixed {
+        display: block;
+    }
+
+    .footer-long {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 32px;
+    }
+
+    .cover-container {
+        max-width: 80%;
+    }
+
+    .px-3 {
+        max-width: 900px;
+    }
+
+    .map-container {
+        width: 768px;
+    }
+}
+
+.name {
+    font-size: calc(1.6rem + 1.5vw) !important;
+    display: block;
+    text-transform: uppercase;
+}
+
+.lead {
+    padding-top: 40px !important;
+}
+
+footer {
+    padding-top: 80px;
+}
+
+.message {
+    margin-top: 50px;
+}
+
+.services {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.location-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.map-link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: rgba(46, 135, 255, 1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.map-link:hover {
+    color: #fff;
+    background-color: rgb(46, 59, 255);
+}
+
+.btnWhatsapp {
+    padding: 10px;
+    --bs-btn-bg: #25d366;
+    --bs-btn-border-color: #25d366;
+    --bs-btn-active-bg: #1d994b;
+    --bs-btn-hover-bg: #1d994b;
+    --bs-btn-border-color: #25d366;
+    --bs-btn-active-border-color: #1d994b;
+    --bs-btn-hover-border-color: #1d994b;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.WhatsappLink {
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.background {
+    background: url(/images/background.webp) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text-shadow {
+    text-shadow: #444 1px 1px;
+}
+
+footer.fixed-bottom {
+    z-index: -1;
+}
+
+.language-selector {
+    /* position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; */
+    display: flex;
+    flex-direction: row;
+    /* Added to stack buttons vertically */
+    gap: 10px;
+    /* Added spacing between buttons */
+}
+
+.language-btn {
+    background-color: rgba(46, 135, 255, 0.5);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.language-btn.active {
+    background-color: rgba(46, 135, 255, 1);
+    border-color: rgba(46, 135, 255, 0.8);
+    font-weight: bold;
+}
+
+.language-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
