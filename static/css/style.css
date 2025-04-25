@@ -36,11 +36,11 @@
     }
 
     .cover-container {
-        max-width: 80%;
+        /* max-width: 80%; */
     }
 
     .px-3 {
-        max-width: 900px;
+        /* max-width: 900px; */
     }
 
     .map-container {
@@ -126,17 +126,17 @@ footer {
 }
 
 .btnWhatsapp {
-    padding: 10px;
-    --bs-btn-bg: #25d366;
-    --bs-btn-border-color: #25d366;
-    --bs-btn-active-bg: #1d994b;
-    --bs-btn-hover-bg: #1d994b;
-    --bs-btn-border-color: #25d366;
-    --bs-btn-active-border-color: #1d994b;
-    --bs-btn-hover-border-color: #1d994b;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding: 10px !important;
+    --bs-btn-bg: #25d366 !important;
+    --bs-btn-border-color: #25d366 !important;
+    --bs-btn-active-bg: #1d994b !important;
+    --bs-btn-hover-bg: #1d994b !important;
+    --bs-btn-border-color: #25d366 !important;
+    --bs-btn-active-border-color: #1d994b !important;
+    --bs-btn-hover-border-color: #1d994b !important;
+    text-decoration: none !important;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
 }
 
 .WhatsappLink {
@@ -150,6 +150,22 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-height: 100vh;
+}
+
+.navbar-background {
+    background: url(/images/background.webp) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.content-background {
+    background: rgb(27, 72, 132) !important;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 .text-shadow {
@@ -191,4 +207,64 @@ footer.fixed-bottom {
 
 .language-btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mrp {
+    text-decoration: line-through;
+}
+
+.package-card {
+    background: rgb(27, 72, 132) !important
+}
+
+.details {
+    color: whitesmoke;
+}
+
+.details:hover {
+    color: #c1ccf8;
+}
+
+.list-item-style {
+    font-size: 12pt;
+    font-weight: 700;
+
+    ;
+}
+
+.card-title {
+    padding-bottom: 10px;
+}
+
+.test-amount-style {
+    font-size: 12pt !important;
+}
+
+.package-price {
+    font-size: 21pt !important;
+    font-weight: 800;
+}
+
+.package-price-card {
+    text-shadow: 1px 1px 2px black;
+    text-align: justify;
+}
+
+.test-total-amount {
+    font-size: 18pt !important;
+    font-weight: 800;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    font-weight: 700 !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+    font-weight: 900 !important;
 }

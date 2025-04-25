@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Posts</title>
+    <title>Sudama Health Packages</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    {{ partial "head.html" . }}
 </head>
+
 <body>
-    <h1>Posts</h1>
-    <ul>
-        {{ range .Paginator.Pages }}
-        <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            <p>{{ .Date.Format "2006-01-02" }}</p>
-            <p>{{ .Summary }}</p>
-        </li>
-        {{ end }}
-    </ul>
+    {{ partial "navbar.html" .}}
+
+    <div class="text-white bg-dark background">
+        <div class="cover-container text-center d-flex mx-auto flex-column">
+            <header class="mb-auto text-shadow">
+                <img src="{{ .Site.Params.logo }}"
+                    class="bd-placeholder-img bd-placeholder-img-lg d-inline-block align-top"
+                    width="200" height="200" alt="{{ T " site_logo_alt" }}">
+                <h1 class="name">Sudama Health</h1>
+            </header>
+
+            <h1>Packages</h1>
+            <div
+                class="row row-cols-3 row-cols-md-3 gap-4 justify-content-center pb-5 mb-5 mx-4 text-shadow">
+                {{ range .Paginator.Pages }}
+                <div class="row">
+                    <div class="card text-white h-100 package-card">
+                        <div class="card-body package-card-body">
+                            <h5 class="card-title">{{ .Title}}</h5>
+                            <p class="card-text"> Parameters Tested - {{.Params.Parameters}}</p> 
+                            <p class="card-text">MRP ₹<span class="mrp">{{
+                                    .Params.Mrp}}</span><br />
+                                Package Price ₹{{.Params.Package_Price}} </p>
+                                <p class="card-text"><a class='details' href="{{ .Permalink}}">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ partial "footer.html" . }}
 </body>
+
 </html>

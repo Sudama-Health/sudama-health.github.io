@@ -1,23 +1,32 @@
 baseURL = "http://localhost:1313"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-    
-[languages]
-  [languages.en]
-    languageName = "English"
-    weight = 1
-    contentDir = "content/en"
-    languageCode = "en-US"
-    title = "Sudama Health"
-    
 
-  [languages.kn]
-    languageName = "ಕನ್ನಡ"
-    weight = 2
-    contentDir = "content/kn"
-    languageCode = "kn-IN"
-    title = "ಸುದಾಮ ಆರೋಗ್ಯ"
+[languages]
+
+[languages.en]
+languageName = "English"
+weight = 1
+contentDir = "content/en"
+languageCode = "en-US"
+title = "Sudama Health"
+
+[languages.kn]
+languageName = "ಕನ್ನಡ"
+weight = 2
+contentDir = "content/kn"
+languageCode = "kn-IN"
+title = "ಸುದಾಮ ಆರೋಗ್ಯ"
 
 [params]
-  description = "A telemedicine clinic offering expert doctor consultations"
-  logo = "/images/sudama_logo.webp"
+description = "A telemedicine clinic offering expert doctor consultations"
+logo = "/images/sudama_logo.webp"
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+unsafe = true # Enable user to embed HTML snippets in Markdown content.
+

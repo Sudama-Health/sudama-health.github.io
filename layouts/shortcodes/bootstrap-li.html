@@ -1,0 +1,10 @@
+{{ $htmlTable := .Inner | markdownify }}
+{{ $class := .Get 0 }}
+{{ $old := "<li>" }}
+{{ $new := printf "<li class=\"%s\">" $class }}
+{{ $htmlTable := replace $htmlTable $old $new }}
+<!-- {{ $class := .Get 0 }}
+{{ $old := "</table>" }}
+{{ $new := "</table></div>" }}
+{{ $htmlTable := replace $htmlTable $old $new }} -->
+{{ $htmlTable | safeHTML }} 
