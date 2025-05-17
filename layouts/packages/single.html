@@ -16,29 +16,41 @@
         {{ partial "navbar.html" .}}
 
         <div class="text-white bg-dark background">
-            <div class="cover-container text-center d-flex mx-auto flex-column">
+            <div class="cover-container text-center d-flex mx-2 flex-column">
                 <header class="mb-auto text-shadow">
                     <h1 class="mt-5"><u>{{ .Title }}</u></h1>
 
                 </header>
-                <!-- <div class="mx-auto pt-5 content-background">
+
+                <div class="row justify-content-center pt-5 m-2">
+                    <!-- Left Column -->
+                    <div class="col-md-6 col-lg-5 mx-2 content-background">
+                        <!-- <div class="mx-auto pt-5 content-background">
                 <div class="card-body"> -->
-                {{ .Content }}
-                <!-- <div class="thinking-bubble">$1230</div>
+                        {{ .Content }}
+                        <!-- <div class="thinking-bubble">$1230</div>
                 </div>
             </div> -->
-            <div class="mx-auto pt-5 content-background"><div
-                    class="card-body package-price-card ">
-                    <span class="package-price badge bg-primary rounded-pill">
-                        Special Sudama Package Price <span
-                            class="package-price badge bg-success rounded-pill">
-                            ₹{{.Params.Package_Price}}</span>
-                    </span>
-                    {{partial "booktestbutton.html" .}}
-                </div></div>
-            </div>
-        </div>
-        {{partial "footer.html" .}}
-    </body>
+                    </div>
+                </div>
+                <div class="row justify-content-center pb-1 m-2">
+                    <div class="col-md-6 col-lg-5 mx-2 pb-1 content-background">
+                        <div class="card-body package-card">
 
-</html>
+                            <div
+                                class=" card-text package-price badge bg-primary rounded-pill text-wrap lh-2 px-5">
+                                {{ T "special_sudama_package_price"}}
+                                <div class="text-wrap m-1">
+                                    ₹{{.Params.Package_Price}} </div>
+                            </div>
+                            {{partial "booktestbutton.html" .}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ partial "footer.html" . }}
+            {{ partial "scripts.html" . }}
+
+        </body>
+
+    </html>

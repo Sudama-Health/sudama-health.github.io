@@ -25,14 +25,8 @@
 - id: get_directions
   translation: "ನಿರ್ದೇಶನಗಳನ್ನು ಪಡೆಯಿರಿ"
 
-- id: lab_test_packages
-  translation: "ಲ್ಯಾಬ್ ಪರೀಕ್ಷಾ ಪ್ಯಾಕೇಜುಗಳು"
-
 - id: book_an_appointment
   translation: "ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ಬುಕ್ ಮಾಡಿ"
-
-- id: home
-  translation: "ಮನೆ"
 
 - id: your_health_companion
   translation: "ನಿಮ್ಮ ಆರೋಗ್ಯ ಸಂಗಾತಿ"
@@ -42,3 +36,39 @@
 
 - id: book_test_now
   translation: "ಈ ಪರೀಕ್ಷೆಯನ್ನು ಈಗಲೇ ಬುಕ್ ಮಾಡಿ"
+
+- id: lab_test_packages
+  translation: "ಲ್ಯಾಬ್ ಪರೀಕ್ಷಾ ಪ್ಯಾಕೇಜುಗಳು"
+
+- id: home
+  translation: "ಮುಖಪುಟ"
+
+- id: book_test_now
+  translation: "ಈ ಪರೀಕ್ಷೆಯನ್ನು ಈಗಲೇ ಬುಕ್ ಮಾಡಿ"
+
+- id: lab_features
+  translation: "ಗುಣಮಟ್ಟದ ಆರೋಗ್ಯ ಸೇವೆ ಎಲ್ಲರ ಕೈಗೆಟುಕುವ ಮಟ್ಟದಲ್ಲಿರಬೇಕು ಎಂದು ನಾವು ನಂಬುತ್ತೇವೆ. ಆ ನಿಟ್ಟಿನಲ್ಲಿ, ನಮ್ಮ ಎಲ್ಲಾ ಪ್ರಯೋಗಾಲಯ ಪರೀಕ್ಷೆಗಳನ್ನು NABL-ಮಾನ್ಯತೆ ಪಡೆದ ಪ್ರಯೋಗಾಲಯಗಳಲ್ಲಿ ಸಂಸ್ಕರಿಸಲಾಗುತ್ತದೆ, ಇದು ವಿಶ್ವಾಸಾರ್ಹ ಫಲಿತಾಂಶಗಳನ್ನು ಖಾತರಿಪಡಿಸುತ್ತದೆ. ಇದಲ್ಲದೆ, ನಮ್ಮ ಆರೋಗ್ಯ ತಪಾಸಣೆ ಪ್ಯಾಕೇಜ್‌ಗಳನ್ನು ಅವರ ವೈಯಕ್ತಿಕ ಪರೀಕ್ಷೆಗಳ ಮೊತ್ತಕ್ಕೆ ಹೋಲಿಸಿದರೆ ಗಮನಾರ್ಹ ರಿಯಾಯಿತಿಯೊಂದಿಗೆ ಬೆಲೆ ನಿಗದಿಪಡಿಸಲಾಗಿದೆ, ಇದು ಸಮಗ್ರ ಆರೋಗ್ಯ ತಪಾಸಣೆಗೆ ನಿಮಗೆ ಅಸಾಧಾರಣ ಮೌಲ್ಯವನ್ನು ನೀಡುತ್ತದೆ."
+
+- id: tests_covered
+  translation: "ಪರೀಕ್ಷೆಗಳ ವ್ಯಾಪ್ತಿ"
+
+- id: package_price
+  translation: "ಪ್ಯಾಕೇಜ್ ಬೆಲೆ"
+
+- id: total_discount
+  translation: "ಒಟ್ಟು ರಿಯಾಯಿತಿ"
+
+- id: details
+  translation: "ವಿವರಗಳು"
+
+- id: book_this_test_now
+  translation: "ಈ ಪರೀಕ್ಷೆಯನ್ನು ಈಗಲೇ ಬುಕ್ ಮಾಡಿ"
+
+- id: includes_following_tests
+  translation: "ಕೆಳಗಿನ ಪರೀಕ್ಷೆಗಳನ್ನು ಒಳಗೊಂಡಿದೆ"
+
+- id: total_mrp_price
+  translation: "ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ"
+
+- id: special_sudama_package_price
+  translation: "ವಿಶೇಷ ಸುದಾಮ ಪ್ಯಾಕೇಜ್ ಬೆಲೆ"

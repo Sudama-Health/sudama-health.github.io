@@ -1,7 +1,7 @@
 {{ $htmlTable := .Inner | markdownify }}
 {{ $class := .Get 0 }}
 {{ $old := "<div>" }}
-{{ $new := "<div class=\"mx-auto pt-5 content-background\"><div class=\"card-body\">"}}
+{{ $new := "<div class=\"mx-auto pt-5 content-background\"><div class=\"card-body \">"}}
 {{ $htmlTable := replace $htmlTable $old $new }}
 {{ $class := .Get 0 }}
 {{ $old := "</div>" }}

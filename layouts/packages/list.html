@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Sudama Health Packages</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css" />
-    {{ partial "head.html" . }}
-</head>
+    <head>
+        <title>Sudama Health Packages</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css" />
+        {{ partial "head.html" . }}
+    </head>
 
-<body>
-    {{ partial "navbar.html" .}}
+    <body>
+        {{ partial "navbar.html" .}}
 
-    <div class="text-white bg-dark background">
-        <div class="cover-container text-center d-flex mx-auto flex-column">
-            <header class="mb-auto text-shadow">
-                <img src="{{ .Site.Params.logo }}"
-                    class="bd-placeholder-img bd-placeholder-img-lg d-inline-block align-top"
-                    width="200" height="200" alt="{{ T " site_logo_alt" }}">
-                <h1 class="name">Sudama Health</h1>
-            </header>
-
-            <h1>Packages</h1>
-            <div
-                class="row row-cols-3 row-cols-md-3 gap-4 justify-content-center pb-5 mb-5 mx-4 text-shadow">
-                {{ range .Paginator.Pages }}
-                <div class="row">
-                    <div class="card text-white h-100 package-card">
-                        <div class="card-body package-card-body">
-                            <h5 class="card-title">{{ .Title}}</h5>
-                            <p class="card-text"> Parameters Tested - {{.Params.Parameters}}</p> 
-                            <p class="card-text">MRP ₹<span class="mrp">{{
-                                    .Params.Mrp}}</span><br />
-                                Package Price ₹{{.Params.Package_Price}} </p>
-                                <p class="card-text"><a class='details' href="{{ .Permalink}}">Details</a></p>
-                        </div>
+        <div class="text-white bg-dark background">
+            <div class="cover-container text-center d-flex mx-auto flex-column">
+                <h1>{{ T "lab_test_packages" }}</h1>
+                <div
+                    class="row row-cols-1 row-cols-md-2 gap-4 justify-content-center  my-5 mx-4 text-shadow">
+                    <div class="card text-white h-100 package-card px-4 py-4">
+                        {{ T "lab_features" }}
                     </div>
                 </div>
 
-                {{ end }}
+                <div
+                    class="row row-cols-1 row-cols-sm-1 row-cols-md-3 gap-4 justify-content-center pb-5 mb-5 mx-4 text-shadow">
+                    {{ range .Pages.ByDate }}
+                    <div class="row">
+                        <div class="card text-white h-100 package-card">
+                            <div class="card-body package-card-body">
+                                <h5 class="card-title fw-bold">{{ .Title}}</h5>
+                                <p class="card-text"> {{ T "tests_covered"}} -
+                                    {{.Params.Parameters}}</p>
+                                <p class="card-text">MRP ₹<span class="mrp">{{
+                                        .Params.Mrp}}</span><br />
+                                    {{ T "package_price"}} ₹{{.Params.Package_Price}}
+                                    {{ $mrp := math.Round .Params.Mrp}}
+                                    {{ $val := math.Sub $mrp
+                                    .Params.Package_Price}}
+                                    {{ $val := math.Div $val .Params.Mrp}}
+                                    {{ $val := math.Mul $val 100 }}
+                                    {{ $val := math.Round $val }}
+                                    <br />
+                                    <b>{{ T "total_discount"}} {{ $val }}%</b>
+                                </p>
+                                <p class="card-text"><a
+                                        class='btn btn-primary details'
+                                        role="button"
+                                        href="{{ .Permalink}}">{{ T "total_discount"}}</a>
+                                    <a
+                                        href="https://wa.me/918123686585?text=I%20want%20a%20book%20lab%20test%20package%20{{.Title}}"
+                                        target="_blank" class="WhatsappLink">
+                                        <button
+                                            class="btn btn-primary d-block mx-auto btnWhatsapp">
+                                            <i class="fa fa-whatsapp"
+                                                style="font-size: 24px"></i>
+                                            &nbsp;{{ T
+                                            "book_this_test_now" }}
+                                        </button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>  
+
+                    {{ end }}
+                </div>
             </div>
         </div>
-    </div>
-    {{ partial "footer.html" . }}
-</body>
-
+        {{ partial "footer.html" . }}
+        {{ partial "scripts.html" . }}
+    </body>
 </html>

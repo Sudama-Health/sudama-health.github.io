@@ -30,3 +30,8 @@ defaultMarkdownHandler = "goldmark"
 [markup.goldmark.renderer]
 unsafe = true # Enable user to embed HTML snippets in Markdown content.
 
+
+[pagination]
+  disableAliases = false
+  pagerSize = 20
+  path = 'packages'

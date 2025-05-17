@@ -42,3 +42,30 @@
 
 - id: book_test_now
   translation: "Book this test now"
+
+- id: lab_features
+  translation: "We believe that quality healthcare should be accessible to everyone. In line with this, all our lab tests are processed in NABL-accredited laboratories, ensuring reliable results. Additionally, our health checkup packages are priced significantly lower than the sum of their individual tests, providing you with"
+
+- id: tests_covered
+  translation: "Tests Covered"
+
+- id: package_price
+  translation: "Package Price"
+
+- id: total_discount
+  translation: "Total Discount"
+
+- id: details
+  translation: "Details"
+
+- id: book_this_test_now
+  translation: "Book this test now"
+
+- id: includes_following_tests
+  translation: "Includes the following tests"
+
+- id: total_mrp_price
+  translation: "Total MRP Price"
+
+- id: special_sudama_package_price
+  translation: "Special Sudama Package Price"

@@ -1,0 +1,10 @@
+{
+    "typescript.updateImportsOnPaste.enabled": false,
+    "editor.pasteAs.enabled": false,
+    "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
+    "markdown.editor.filePaste.enabled": "never",
+    "markdown.editor.updateLinksOnPaste.enabled": false,
+    "[markdown]": {
+        "editor.defaultFormatter": "vscode.markdown-language-features"
+    }
+}
