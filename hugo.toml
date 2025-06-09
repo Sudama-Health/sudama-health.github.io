@@ -35,3 +35,7 @@ unsafe = true # Enable user to embed HTML snippets in Markdown content.
   disableAliases = false
   pagerSize = 20
   path = 'packages'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
