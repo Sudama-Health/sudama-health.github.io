@@ -24,7 +24,7 @@ params:
 - ಥೈರಾಯ್ಡ್ ಪ್ರೊಫೈಲ್ ಟೋಟಲ್<span class="badge bg-primary rounded-pill test-amount-style">₹550</span>
 - ವಿಟಮಿನ್ ಬಿ 12 (ಸೈನೊಕೊಬಾಲಮಿನ್)<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
 - ವಿಟಮಿನ್ ಡಿ,25-ಓ ಹೆಚ್<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
-- ಕಬ್ಬಿಣದ ಅಧ್ಯಯನಗಳು<span class="badge bg-primary rounded-pill test-amount-style">₹500</span>
+- ಐರನ್ ಸ್ಟಡೀಸ್ <span class="badge bg-primary rounded-pill test-amount-style">₹500</span>
 - ನಿಮ್ಮ ವರದಿಯ ಆಧಾರದ ಮೇಲೆ ಡಾಕ್ಟರ್ ಸಮಾಲೋಚನೆ <span class="badge bg-primary rounded-pill test-amount-style mx-2\">₹300</span>
     {{< /bootstrap-li >}}    
     
