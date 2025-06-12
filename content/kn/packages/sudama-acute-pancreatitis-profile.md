@@ -21,6 +21,6 @@ params:
   {{< /bootstrap-li >}}  
 
 
-### <span class="badge bg-primary rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹1850</span>
+### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹1850</span>
 
 </div></div>

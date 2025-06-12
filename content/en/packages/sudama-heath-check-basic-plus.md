@@ -22,5 +22,5 @@ params:
 - Blood Glucose Fasting (FBS) <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹70</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">Total MRP Price - ₹3070</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹3070</span> ###
 </div></div>

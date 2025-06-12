@@ -29,5 +29,5 @@ span>
 - Lipid Profile <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹600</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">Total MRP Price - ₹5860</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹5860</span> ###
 </div></div>

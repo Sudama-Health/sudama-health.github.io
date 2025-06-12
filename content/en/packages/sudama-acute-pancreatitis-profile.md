@@ -23,6 +23,6 @@ params:
   {{< /bootstrap-li >}}  
 
 
-### <span class="badge bg-primary rounded-pill test-total-amount">Total MRP Price - ₹1850</span>
+### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹1850</span>
 
 </div></div>

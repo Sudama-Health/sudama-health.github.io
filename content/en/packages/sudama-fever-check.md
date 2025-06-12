@@ -23,5 +23,5 @@ params:
 - Alanine Amino-transferase (ALT) SGPT <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹160</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">Total MRP Price - ₹3580</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹3580</span> ###
 </div></div>

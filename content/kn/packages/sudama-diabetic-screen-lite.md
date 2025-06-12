@@ -17,5 +17,5 @@ params:
 - HbA1c (ಗ್ಲೈಕೇಟೆಡ್ ಹಿಮೋಗ್ಲೋಬಿನ್)<span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹740</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹740</span> ###
 </div></div>

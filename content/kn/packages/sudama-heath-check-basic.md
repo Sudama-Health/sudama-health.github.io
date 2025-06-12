@@ -20,5 +20,5 @@ params:
 - ಲಿವರ್ ಫಂಕ್ಷನ್ ಟೆಸ್ಟ್ (LFT)<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹2400</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹2400</span> ###
 </div></div>

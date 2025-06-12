@@ -22,5 +22,5 @@ params:
 - ಒಟ್ಟು ಪ್ರೋಟೀನ್, ಸೀರಮ್<span class="badge bg-primary rounded-pill test-amount-style">₹ 260</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹3540</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹3540</span> ###
 </div></div>

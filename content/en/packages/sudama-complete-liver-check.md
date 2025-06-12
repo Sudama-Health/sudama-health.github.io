@@ -22,5 +22,5 @@ params:
 - Total Protein, Serum <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹260</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">Total MRP Price - ₹3540</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹3540</span> ###
 </div></div>

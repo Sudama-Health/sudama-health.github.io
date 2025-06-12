@@ -18,5 +18,5 @@ params:
 - Phosporus <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹190</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">Total MRP Price - ₹1190</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹1190</span> ###
 </div></div>        

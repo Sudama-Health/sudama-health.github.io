@@ -24,5 +24,5 @@ params:
 - ಲಿವರ್ ಫಂಕ್ಷನ್ ಟೆಸ್ಟ್ ಗೋಲ್ಡ್<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-primary rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹3290</span> ###
+### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹3290</span> ###
 </div></div>
