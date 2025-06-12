@@ -69,3 +69,6 @@
 
 - id: special_sudama_package_price
   translation: "Special Sudama Package Price"
+
+- id: prices-note
+  translation: "Individual test prices are indicative only, please check at the time of booking."

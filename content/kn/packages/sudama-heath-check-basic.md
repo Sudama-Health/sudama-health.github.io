@@ -1,5 +1,5 @@
 ---
-title: 'ಸುದಾಮ ಶ್ರೇಣೀಬದ್ಧ ಆರೋಗ್ಯ'
+title: 'ಸುದಾಮ ಬೇಸಿಕ್ ತಪಾಸಣೆ'
 date: 2025-04-10T15:35:02+05:30
 draft: false
 params: 
@@ -14,10 +14,10 @@ params:
 {{< bootstrap-li "list-group-item d-flex justify-content-between align-items-center list-item-style my-3" >}}
 - ಥೈರಾಯ್ಡ್ ಪ್ರೊಫೈಲ್ ಒಟ್ಟು<span class="badge bg-primary rounded-pill test-amount-style">₹550</span>
 - ಲಿಪಿಡ್ ಪ್ರೊಫೈಲ್<span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
-- ಮೂತ್ರಪಿಂಡದ ಕಾರ್ಯ ಪರೀಕ್ಷೆ (KFT)<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
+- ಕಿಡ್ನಿಕಾರ್ಯ ಪರೀಕ್ಷೆ (KFT)<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
 - ಸಿಬಿಸಿ<span class="badge bg-primary rounded-pill test-amount-style">₹300</span>
 - ಸಂಪೂರ್ಣ ಮೂತ್ರ ಪರೀಕ್ಷೆ<span class="badge bg-primary rounded-pill test-amount-style">₹150</span>
-- ಲಿವರ್ ಫಂಕ್ಷನ್ ಟೆಸ್ಟ್ ಗೋಲ್ಡ್ (LFT )<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
+- ಲಿವರ್ ಫಂಕ್ಷನ್ ಟೆಸ್ಟ್ (LFT)<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
     {{< /bootstrap-li >}}    
     
 ### <span class="badge bg-primary rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹2400</span> ###

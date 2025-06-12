@@ -72,3 +72,6 @@
 
 - id: special_sudama_package_price
   translation: "ವಿಶೇಷ ಸುದಾಮ ಪ್ಯಾಕೇಜ್ ಬೆಲೆ"
+
+- id: prices-note
+  translation: "ವೈಯಕ್ತಿಕ ಪರೀಕ್ಷಾ ಬೆಲೆಗಳು ಕೇವಲ ಸೂಚಕವಾಗಿವೆ, ದಯವಿಟ್ಟು ಬುಕಿಂಗ್ ಸಮಯದಲ್ಲಿ ಪರಿಶೀಲಿಸಿ."

@@ -256,6 +256,7 @@ footer.fixed-bottom {
     font-weight: 800;
     padding-left: 30px !important;
     padding-right: 30px !important;
+    white-space: normal !important
 }
 
 .nav-link {

@@ -16,11 +16,11 @@ params:
 - ಕ್ಯಾಲ್ಸಿಯಂ<span class="badge bg-primary rounded-pill test-amount-style">₹200</span>
 - ಸಂಪೂರ್ಣ ರಕ್ತದ ಎಣಿಕೆ (ಸಿಬಿಸಿ)<span class="badge bg-primary rounded-pill test-amount-style">₹300</span>
 - ಸಂಪೂರ್ಣ ಮೂತ್ರ ಪರೀಕ್ಷೆ<span class="badge bg-primary rounded-pill test-amount-style">₹150</span>
--  ಚ್  ಬಿ ಎ ೧ಸಿ  <span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
-- ಮೂತ್ರಪಿಂಡದ ಕಾರ್ಯ ಪರೀಕ್ಷೆ<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
+- ಚ್  ಬಿ ಎ ೧ಸಿ  <span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
+- ಕಿಡ್ನಿ ಕಾರ್ಯ ಪರೀಕ್ಷೆ <span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
 - ಲಿಪಿಡ್ ಪ್ರೊಫೈಲ್<span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
 - ಲಿವರ್  ಕಾರ್ಯ ಪರೀಕ್ಷೆ  <span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
-- ಪ್ರಾಸ್ಟೇಟ್ ನಿರ್ದಿಷ್ಟ ಪ್ರತಿಜನಕ, ಟೋಟಲ್ (ಟೋಟಲ್  PSA)<span class="badge bg-primary rounded-pill test-amount-style">₹800</span>
+- ಪ್ರೋಸ್ಟೇಟ್ ವಿಶೇಷ ಆಂಟಿಜನ್, ಒಟ್ಟು (ಒಟ್ಟು ಪಿಎಸ್‌ಎ) <span class="badge bg-primary rounded-pill test-amount-style">₹800</span>
 - ಥೈರಾಯ್ಡ್ ಪ್ರೊಫೈಲ್ ಟೋಟಲ್<span class="badge bg-primary rounded-pill test-amount-style">₹550</span>
 - ವಿಟಮಿನ್ ಬಿ 12 (ಸೈನೊಕೊಬಾಲಮಿನ್)<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
 - ವಿಟಮಿನ್ ಡಿ,25-ಓ ಹೆಚ್<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>

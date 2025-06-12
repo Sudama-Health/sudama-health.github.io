@@ -19,7 +19,7 @@ params:
 - ಸಂಪೂರ್ಣ ಮೂತ್ರ ಪರೀಕ್ಷೆ<span class="badge bg-primary rounded-pill test-amount-style">₹150</span>
 - ಚ್ ಬಿ ಎ ೧ಸಿ <span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
 - ಐರನ್ ಸ್ಟಡೀಸ್ <span class="badge bg-primary rounded-pill test-amount-style">₹500</span>
-- ಮೂತ್ರಪಿಂಡ ಕಾರ್ಯ ಪರೀಕ್ಷೆ<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
+- ಕಿಡ್ನಿ ಕಾರ್ಯ ಪರೀಕ್ಷೆ<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
 - ಲಿಪಿಡ್ ಪ್ರೊಫೈಲ್<span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
 - ಲಿವರ್  ಕಾರ್ಯ ಪರೀಕ್ಷೆ  <span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
 - ಥೈರಾಯ್ಡ್ ಪ್ರೊಫೈಲ್ ಟೋಟಲ್<span class="badge bg-primary rounded-pill test-amount-style">₹550</span>
