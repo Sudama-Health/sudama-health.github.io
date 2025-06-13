@@ -19,4 +19,4 @@ params:
     {{< /bootstrap-li >}}    
     
 ### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹1190</span> ###
-</div></div>        
+</div></div>

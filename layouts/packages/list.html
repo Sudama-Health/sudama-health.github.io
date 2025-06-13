@@ -33,7 +33,8 @@
                                     {{.Params.Parameters}}</p>
                                 <p class="card-text">MRP ₹<span class="mrp">{{
                                         .Params.Mrp}}</span><br />
-                                    {{ T "package_price"}} ₹{{.Params.Package_Price}}
+                                    {{ T "package_price"}}
+                                    ₹{{.Params.Package_Price}}
                                     {{ $mrp := math.Round .Params.Mrp}}
                                     {{ $val := math.Sub $mrp
                                     .Params.Package_Price}}
@@ -46,7 +47,8 @@
                                 <p class="card-text"><a
                                         class='btn btn-primary details'
                                         role="button"
-                                        href="{{ .Permalink}}">{{ T "details"}}</a>
+                                        href="{{ .Permalink}}">{{ T
+                                        "details"}}</a>
                                     <a
                                         href="https://wa.me/918123686585?text=I%20want%20a%20book%20lab%20test%20package%20{{.Title}}"
                                         target="_blank" class="WhatsappLink">
@@ -61,12 +63,12 @@
                                 </p>
                             </div>
                         </div>
-                    </div>  
+                    </div>
 
                     {{ end }}
                 </div>
             </div>
-            <div style="font-size:10px;"> 
+            <div style="font-size:10px;">
                 * {{ T "prices-note"}}
             </div>
 
