@@ -72,3 +72,12 @@
 
 - id: prices-note
   translation: "Individual test prices are indicative only, please check at the time of booking."
+
+- id: careers
+  translation: "Careers"
+
+- id: apply_now
+  translation: "Apply Now"
+
+- id: interested_in_this_position
+  translation: "Interested in this position?"

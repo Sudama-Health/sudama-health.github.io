@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Careers at Sudama Health</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css" />
+        {{ partial "head.html" . }}
+    </head>
+
+    <body>
+        {{ partial "navbar.html" .}}
+
+        <div class="container-fluid background text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <header class="mb-auto text-shadow">
+                            <h1 class="mt-5"><u>{{ .Title }}</u></h1>
+                        </header>
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-5 m-2">
+                    <div class="col-md-8 col-lg-7">
+                        <div class="list-group package-card">
+                            {{ range .Pages }}
+                            <a href="{{ .Permalink }}" class="list-group-item-primary list-group-item-action flex-column align-items-start p-4">
+                                <div class="d-flex w-100 justify-content-between text-white">
+                                    <h5 class="mb-1">{{ .Title }}</h5>
+                                    <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+                                </div>
+                                <p class="mb-1 text-white">{{ .Description }}</p>
+                            </a>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ partial "footer.html" . }}
+        {{ partial "scripts.html" . }}
+    </body>
+</html>

@@ -30,6 +30,14 @@
                         "lab_test_packages" }}</a>
                 </li>
                 <li class="nav-item">
+                    <a {{ if ne .Path "/careers"}} class="nav-link" {{ else
+                        }}
+                        class="nav-link active" aria-current="page" {{ end
+                        }}
+                        href="/{{ .Language.Lang }}/careers">{{ T
+                        "careers" }}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" target="_blank"
                         href="https://wa.me/918123686585?text=I%20want%20to%20book%20an%20appointment%20at">{{
                         T "book_an_appointment" }}</a>

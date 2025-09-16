@@ -75,3 +75,12 @@
 
 - id: prices-note
   translation: "ವೈಯಕ್ತಿಕ ಪರೀಕ್ಷಾ ಬೆಲೆಗಳು ಕೇವಲ ಸೂಚಕವಾಗಿವೆ, ದಯವಿಟ್ಟು ಬುಕಿಂಗ್ ಸಮಯದಲ್ಲಿ ಪರಿಶೀಲಿಸಿ."
+
+- id: careers
+  translation: "ಉದ್ಯೋಗಗಳು"
+
+- id: apply_now
+  translation: "ಈಗ ಅನ್ವಯಿಸು"
+
+- id: interested_in_this_position
+  translation: "ಈ ಸ್ಥಾನದಲ್ಲಿ ಆಸಕ್ತಿ ಇದೆಯೇ?"
