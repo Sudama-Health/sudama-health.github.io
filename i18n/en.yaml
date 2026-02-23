@@ -1,6 +1,12 @@
 - id: services_title
   translation: "Our Services"
 
+- id: services
+  translation: "Services"
+
+- id: mission
+  translation: "Mission"
+
 - id: services_doctor
   translation: "Expert Doctor Consultations"
 

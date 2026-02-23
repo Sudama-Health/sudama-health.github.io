@@ -24,6 +24,5 @@ params:
   {{< /bootstrap-li >}}  
 
 
-### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹5025</span>
 
 </div></div>

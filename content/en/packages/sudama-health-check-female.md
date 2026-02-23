@@ -28,5 +28,4 @@ params:
 - Doctor Consultation based on your report <span class="badge bg-primary rounded-pill test-amount-style mx-2\">₹300</span>
     {{< /bootstrap-li >}}    
     
-### <div class="badge bg-danger rounded-pill test-total-amount text-wrap">Total MRP Price - ₹5720</div> ###
 </div></div>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudama Health</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+        /* Custom Colors based on the image */
+        :root {
+            --sudama-dark-blue: #0a3d91; /* The primary dark blue color */
+            --sudama-light-blue: #e3f2fd; /* The hero section background */
+        }
+
+        body {
+            font-family: sans-serif; /* Using standard sans-serif stack. Consider using Roboto or Open Sans for closer match */
+        }
+
+        /* Utility Classes for Custom Colors */
+        .bg-sudama-dark { background-color: var(--sudama-dark-blue) !important; }
+        .bg-sudama-light { background-color: var(--sudama-light-blue) !important; }
+        .text-sudama-dark { color: var(--sudama-dark-blue) !important; }
+
+        /* Custom Button Styles to match design */
+        .btn-sudama-dark {
+            background-color: var(--sudama-dark-blue);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+        }
+        .btn-sudama-dark:hover { background-color: #082f70; color: white; }
+
+        .btn-sudama-light {
+            background-color: white;
+            color: var(--sudama-dark-blue);
+            border: none;
+            padding: 10px 24px;
+            font-weight: 600;
+        }
+        .btn-sudama-light:hover { background-color: #f0f0f0; color: var(--sudama-dark-blue); }
+
+        /* Navbar adjustments */
+        .navbar-brand img { height: 40px; }
+        .nav-link { color: white !important; margin-left: 1rem; }
+
+        /* Section Typography weights */
+        h1, h2 { font-weight: 800; }
+        .lead { font-weight: 600; }
+        h5 { font-weight: 700; }
+
+        /* Icon sizes for services section */
+        .service-icon { font-size: 3.5rem; margin-bottom: 1rem; }
+        .stats-icon { font-size: 5rem; }
+
+        /* Footer link styles */
+        .footer-links li a {
+            color: #b0c4de;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer-links li a:hover { color: white; }
+        .copyright-text { color: #b0c4de; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-sudama-dark py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-white" href="#">
+                <i class="bi bi-heart-pulse-fill fs-2 me-2"></i> 
+                <span class="fw-bold">SUDAMA HEALTH</span>
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Appointments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item ms-3">
+                        <select class="form-select form-select-sm" aria-label="Language selector">
+                            <option selected>English</option>
+                            <option value="1">Hindi</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-sudama-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="display-5 text-sudama-dark mb-4">Nurse-assisted video consultations with expert doctors who speak your language.</h1>
+                    <button class="btn btn-sudama-dark btn-lg">Book an appointment now</button>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/600x400/e3f2fd/0a3d91?text=Hero+Illustration+(Doctor+Patient+Nurse)" alt="Nurse assisted video consultation" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-sudama-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Affordable, high-quality primary healthcare for everyone.</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-camera-video service-icon"></i>
+                    <h5>Advanced Video Consultations</h5>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-eyedropper service-icon"></i>
+                    <h5>Accredited Lab Tests</h5>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-journal-medical service-icon"></i>
+                    <h5>First-Aid, Vaccinations & Clinical Procedures</h5>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <i class="bi bi-capsule service-icon"></i>
+                    <h5>Genuine Medicines</h5>
+                </div>
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-sudama-light">Learn about our services</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                     <img src="https://via.placeholder.com/600x400/ffffff/0a3d91?text=Clinic+Illustration" alt="Modern clinic interior" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="text-sudama-dark mb-4">Modern, hygienic clinics with connected diagnostic equipment for a no-compromise video consultation.</h2>
+                    <button class="btn btn-sudama-dark btn-lg">Find a clinic near you</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-sudama-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Building a healthy, happy and productive India.</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0 d-flex align-items-center justify-content-center gap-3 text-start">
+                     <i class="bi bi-people-fill stats-icon"></i>
+                    <div>
+                        <h3 class="fw-bold mb-0 display-6">3000+</h3>
+                        <h5 class="mb-0">satisfied patients served and counting.</h5>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex align-items-center justify-content-center gap-3 text-start">
+                     <i class="bi bi-hospital stats-icon"></i>
+                    <div>
+                        <h3 class="fw-bold mb-0 display-6">2</h3>
+                        <h5 class="mb-0">clinics operational and expanding.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <button class="btn btn-sudama-light">Learn about our mission</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="text-sudama-dark mb-4">Brought to you by a purpose-driven team that truly cares about your well-being.</h2>
+            <div class="d-flex justify-content-center gap-3 mb-5">
+                <button class="btn btn-sudama-dark">Learn about our team</button>
+                <button class="btn btn-sudama-dark">Join our team</button>
+            </div>
+             <img src="https://via.placeholder.com/1000x300/ffffff/0a3d91?text=Team+Illustration" alt="Diverse team illustration" class="img-fluid">
+        </div>
+    </section>
+
+    <footer class="bg-sudama-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Corporate</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Join our team</a></li>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Fund a clinic via CSR</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Help and Support</a></li>
+                        <li><a href="#">Business Enquiries</a></li>
+                        <li><a href="#">Social Media</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Patient Rights</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center copyright-text">
+                    <p class="mb-0">Copyright (C) 2023 Sudama Health Private Limited</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -20,5 +20,4 @@ params:
 - ವಿಟಮಿನ್ ಡಿ,25-ಓ ಹೆಚ್<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹1920</span> ###
 </div></div>

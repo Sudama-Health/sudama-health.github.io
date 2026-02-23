@@ -1,0 +1,95 @@
+/* Custom Colors based on the image */
+:root {
+    --sudama-dark-blue: #0a3d91; /* The primary dark blue color */
+    --sudama-light-blue: #e3f2fd; /* The hero section background */
+}
+
+body {
+    font-family: sans-serif; /* Using standard sans-serif stack. Consider using Roboto or Open Sans for closer match */
+}
+
+/* Utility Classes for Custom Colors */
+.bg-sudama-dark { background-color: var(--sudama-dark-blue) !important; }
+.bg-sudama-light { background-color: var(--sudama-light-blue) !important; }
+.text-sudama-dark { color: var(--sudama-dark-blue) !important; }
+
+/* Custom Button Styles to match design */
+.btn-sudama-dark {
+    background-color: var(--sudama-dark-blue);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+}
+.btn-sudama-dark:hover { background-color: #082f70; color: white; }
+
+.btn-sudama-light {
+    background-color: white;
+    color: var(--sudama-dark-blue);
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+}
+.btn-sudama-light:hover { background-color: #f0f0f0; color: var(--sudama-dark-blue); }
+
+/* Navbar adjustments */
+.navbar-brand img { height: 40px; }
+.nav-link { color: white !important; margin-left: 1rem; }
+
+/* Section Typography weights */
+h1, h2 { font-weight: 800; }
+.lead { font-weight: 600; }
+h5 { font-weight: 700; }
+
+/* Icon sizes for services section */
+.service-icon { font-size: 3.5rem; margin-bottom: 1rem; }
+.stats-icon { font-size: 5rem; }
+
+/* Intro section proportional padding */
+.intro-text {
+    padding: 5vw;
+}
+@media (max-width: 991.98px) {
+    .intro-text {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Footer link styles */
+.footer-links li a {
+    color: #b0c4de;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.footer-links li a:hover { color: white; }
+.copyright-text { color: #b0c4de; font-size: 0.8rem; }
+
+/* Language Selector Styles */
+.language-selector {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.language-btn {
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.language-btn:hover {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.language-btn.active {
+    color: var(--sudama-dark-blue) !important;
+    background-color: white;
+    border-color: white;
+    font-weight: 600;
+}

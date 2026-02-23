@@ -20,5 +20,4 @@ params:
 - ವಿಟಮಿನ್ ಬಿ 12 (ಸೈನೊಕೊಬಾಲಮಿನ್)<span class="badge bg-primary rounded-pill test-amount-style">₹400</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹3200</span> ###
 </div></div>
