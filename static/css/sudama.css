@@ -41,8 +41,49 @@ h1, h2 { font-weight: 800; }
 h5 { font-weight: 700; }
 
 /* Icon sizes for services section */
-.service-icon { font-size: 3.5rem; margin-bottom: 1rem; }
-.stats-icon { font-size: 5rem; }
+.service-icon { 
+    font-size: 3.5rem; 
+    margin-bottom: 1rem; 
+    display: inline-block;
+    height: 8rem;
+    width: auto;
+    line-height: 3.5rem;
+    text-align: center;
+}
+.service-icon img { 
+    height: 8rem; 
+    width: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.service-icon i {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+.stats-icon { 
+    font-size: 5rem; 
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+.stats-icon img { 
+    height: 5rem; 
+    width: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.stats-icon i {
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
 
 /* Intro section proportional padding */
 .intro-text {

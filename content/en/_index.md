@@ -9,13 +9,13 @@ services:
   title: "Affordable, high-quality primary healthcare for everyone."
   items:
     - title: "Advanced Video Consultations"
-      icon: "bi-camera-video"
+      image: "/images/advanced_video_consultations.png"
     - title: "Accredited Lab Tests"
-      icon: "bi-eyedropper"
+      image: "/images/accredited_lab_tests.png"
     - title: "First-Aid, Vaccinations & Clinical Procedures"
-      icon: "bi-journal-medical"
+      image: "/images/first-aid.png"
     - title: "Genuine Medicines"
-      icon: "bi-capsule"
+      image: "/images/genuine medicines.png"
   button_text: "Learn about our services"
 clinics:
   title: "Modern, hygienic clinics with connected diagnostic equipment for a no-compromise video consultation."
@@ -26,10 +26,10 @@ stats:
   items:
     - value: "3000+"
       text: "satisfied patients served and counting."
-      icon: "bi-people-fill"
+      image: "/images/patients.png"
     - value: "2"
       text: "clinics operational and expanding."
-      icon: "bi-hospital"
+      image: "/images/clinics.png"
   button_text: "Learn about our mission"
 team:
   title: "Brought to you by a purpose-driven team that truly cares about your well-being."

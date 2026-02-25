@@ -36,7 +36,11 @@
             <div class="row justify-content-center">
                 {{ range .Params.services.items }}
                 <div class="col-md-3 col-6 mb-4 p-2">
+                    {{ if .image }}
+                    <img src="{{ .image }}" alt="{{ .title }}" class="service-icon img-fluid" />
+                    {{ else }}
                     <i class="bi {{ .icon }} service-icon"></i>
+                    {{ end }}
                     <h5>{{ .title }}</h5>
                 </div>
                 {{ end }}
@@ -69,7 +73,11 @@
             <div class="row justify-content-center align-items-center">
                 {{ range .Params.stats.items }}
                 <div class="col-md-5 mb-4 mb-md-0 d-flex align-items-center justify-content-center gap-3 text-start">
+                    {{ if .image }}
+                    <img src="{{ .image }}" alt="{{ .text }}" class="stats-icon img-fluid" />
+                    {{ else }}
                     <i class="bi {{ .icon }} stats-icon"></i>
+                    {{ end }}
                     <div>
                         <h3 class="fw-bold mb-0 display-6">{{ .value }}</h3>
                         <h5 class="mb-0">{{ .text }}</h5>
