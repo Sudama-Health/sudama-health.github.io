@@ -11,25 +11,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item">
-                    <a {{ if ne .Path "/" }} class="nav-link" {{ else }} class="nav-link active" aria-current="page" {{
+                    <a {{ if .IsHome }} class="nav-link active" aria-current="page" {{ else }} class="nav-link" {{
                         end }} href="/{{ .Language.Lang }}/">{{ T "home" }} </a>
                 </li>
                 <li class="nav-item">
-                    <a {{ if ne .Path "/services" }} class="nav-link" {{ else }} class="nav-link active"
-                        aria-current="page" {{ end }} href="/{{ .Language.Lang }}/services">{{ T "services" }}</a>
+                    <a {{ if or (eq .RelPermalink (printf "/%s/services/" .Language.Lang)) (eq .RelPermalink (printf "/%s/services" .Language.Lang)) }} class="nav-link active"
+                        aria-current="page" {{ else }} class="nav-link" {{ end }} href="/{{ .Language.Lang }}/services">{{ T "services" }}</a>
                 </li>
                 <li class="nav-item">
-                    <a {{ if ne .Path "/mission" }} class="nav-link" {{ else }} class="nav-link active"
-                        aria-current="page" {{ end }} href="/{{ .Language.Lang }}/mission">{{ T "mission" }}</a>
+                    <a {{ if or (eq .RelPermalink (printf "/%s/mission/" .Language.Lang)) (eq .RelPermalink (printf "/%s/mission" .Language.Lang)) }} class="nav-link active"
+                        aria-current="page" {{ else }} class="nav-link" {{ end }} href="/{{ .Language.Lang }}/mission">{{ T "mission" }}</a>
                 </li>
                 <li class="nav-item">
-                    <a {{ if ne .Path "/packages" }} class="nav-link" {{ else }} class="nav-link active"
-                        aria-current="page" {{ end }} href="/{{ .Language.Lang }}/packages">{{ T "lab_test_packages"
+                    <a {{ if or (eq .RelPermalink (printf "/%s/packages/" .Language.Lang)) (eq .RelPermalink (printf "/%s/packages" .Language.Lang)) }} class="nav-link active"
+                        aria-current="page" {{ else }} class="nav-link" {{ end }} href="/{{ .Language.Lang }}/packages">{{ T "lab_test_packages"
                         }}</a>
                 </li>
                 <li class="nav-item">
-                    <a {{ if ne .Path "/careers" }} class="nav-link" {{ else }} class="nav-link active"
-                        aria-current="page" {{ end }} href="/{{ .Language.Lang }}/careers">{{ T "careers" }}</a>
+                    <a {{ if or (eq .RelPermalink (printf "/%s/careers/" .Language.Lang)) (eq .RelPermalink (printf "/%s/careers" .Language.Lang)) }} class="nav-link active"
+                        aria-current="page" {{ else }} class="nav-link" {{ end }} href="/{{ .Language.Lang }}/careers">{{ T "careers" }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank"

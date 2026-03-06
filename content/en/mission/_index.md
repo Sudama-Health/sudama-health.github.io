@@ -6,7 +6,7 @@ hero:
   image: "/images/consultation_room.png"
 sections:
   - title: "Our Vision"
-    content: "To be the most trusted primary healthcare partner for every Indian, leveraging technology and human compassion to deliver care where it's needed most."
+    content: "Deliver quality healthcare to everyone regardless of their location."
   - title: "Our Mission"
     content: "To bridge the gap in healthcare accessibility by establishing high-tech, nurse-assisted clinics that provide expert medical consultations, diagnostic tests, and genuine medicines at affordable prices."
   - title: "Our Values"
