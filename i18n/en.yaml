@@ -1,6 +1,12 @@
 - id: services_title
   translation: "Our Services"
 
+- id: services
+  translation: "Services"
+
+- id: mission
+  translation: "Mission"
+
 - id: services_doctor
   translation: "Expert Doctor Consultations"
 
@@ -44,7 +50,7 @@
   translation: "Book this test now"
 
 - id: lab_features
-  translation: "We believe that quality healthcare should be accessible to everyone. In line with this, all our lab tests are processed in NABL-accredited laboratories, ensuring reliable results. Additionally, our health checkup packages are priced significantly lower than the sum of their individual tests, providing you with"
+  translation: "We believe that quality healthcare should be accessible to everyone. In line with this, all our lab tests are processed in NABL-accredited laboratories, ensuring reliable results. Additionally, our health checkup packages are priced significantly lower than the sum of their individual tests, providing you exceptional value for a comprehensive health checkup."
 
 - id: tests_covered
   translation: "Tests Covered"

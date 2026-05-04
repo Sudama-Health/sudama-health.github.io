@@ -1,45 +1,40 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.Lang }}">
 
-    <head>
-        <title>Careers at Sudama Health</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css" />
-        {{ partial "head.html" . }}
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ T "careers" }} - {{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+</head>
 
-    <body>
-        {{ partial "navbar.html" .}}
+<body class="d-flex flex-column min-vh-100 bg-sudama-light">
+    {{ partial "navbar.html" . }}
 
-        <div class="container-fluid background text-white">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <header class="mb-auto text-shadow">
-                            <h1 class="mt-5"><u>{{ .Title }}</u></h1>
-                        </header>
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-5 m-2">
-                    <div class="col-md-8 col-lg-7">
-                        <div class="list-group package-card">
-                            {{ range .Pages }}
-                            <a href="{{ .Permalink }}" class="list-group-item-primary list-group-item-action flex-column align-items-start p-4">
-                                <div class="d-flex w-100 justify-content-between text-white">
-                                    <h5 class="mb-1">{{ .Title }}</h5>
-                                    <small>{{ .Date.Format "Jan 2, 2006" }}</small>
-                                </div>
-                                <p class="mb-1 text-white">{{ .Description }}</p>
-                            </a>
-                            {{ end }}
+    <div class="container py-5 flex-grow-1">
+        <h1 class="text-center text-sudama-dark fw-bold mb-5">{{ .Title }}</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="list-group border-0">
+                    {{ range .Pages }}
+                    <a href="{{ .Permalink }}"
+                        class="list-group-item list-group-item-action p-4 border-0 mb-3 rounded shadow">
+                        <div class="d-flex w-100 justify-content-between align-items-center mb-2">
+                            <h5 class="mb-1 text-sudama-dark fw-bold">{{ .Title }}</h5>
+                            <small class="text-muted">{{ .Date.Format "Jan 2, 2006" }}</small>
                         </div>
-                    </div>
+                        <p class="mb-1 text-muted">{{ .Description }}</p>
+                        <small class="text-primary">{{ T "read_more" | default "Read More" }} &rarr;</small>
+                    </a>
+                    {{ end }}
                 </div>
             </div>
         </div>
-        {{ partial "footer.html" . }}
-        {{ partial "scripts.html" . }}
-    </body>
+    </div>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+
 </html>

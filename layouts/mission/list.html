@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Description }}" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Hero Section -->
+    <section class="bg-sudama-light">
+        <div class="container-fluid p-0 intro">
+            <div class="row g-0">
+                <div class="col-lg-6 mb-5 mb-lg-0 intro-text d-flex flex-column justify-content-center">
+                    <h1 class="display-5 text-sudama-dark mb-4">{{ .Params.hero.title }}</h1>
+                    <a href="https://wa.me/918123686585?text=I%20want%20to%20learn%20more%20about%20Sudama%20Health"
+                        target="_blank" class="btn btn-sudama-dark btn-lg w-100">{{ T "whatsapp_button" }}</a>
+                </div>
+                <div class="col-lg-6 text-end p-0 intro-image">
+                    <img src="{{ .Params.hero.image }}" alt="Mission Hero" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    {{ range .Params.sections }}
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="text-sudama-dark mb-4">{{ .title }}</h2>
+                    {{ if .content }}
+                    <p class="fs-4 text-muted">{{ .content }}</p>
+                    {{ end }}
+
+                    {{ if .items }}
+                    <div class="row mt-5">
+                        {{ range .items }}
+                        <div class="col-md-6 mb-4 text-start">
+                            <div class="p-4 border-start border-sudama-dark border-4 bg-light h-100">
+                                <h4 class="text-sudama-dark">{{ .title }}</h4>
+                                <p class="mb-0">{{ .description }}</p>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+
+    <!-- Final Call to Action -->
+    <section class="bg-sudama-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">{{ T "professional_healthcare_near_you" }}</h2>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://wa.me/918123686585?text=I%20want%20to%20join%20your%20mission" target="_blank"
+                    class="btn btn-sudama-light btn-lg px-5">{{ T "book_an_appointment" }}</a>
+            </div>
+        </div>
+    </section>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+
+    <style>
+        .border-sudama-dark {
+            border-color: var(--sudama-dark-blue) !important;
+        }
+    </style>
+</body>
+
+</html>

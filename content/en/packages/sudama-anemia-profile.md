@@ -20,5 +20,4 @@ params:
 - Vitamin B12 (Cyanocobalamin) <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹400</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-danger rounded-pill test-total-amount">Total MRP Price - ₹3200</span> ###
 </div></div>

@@ -1,6 +1,12 @@
 - id: services_title
   translation: "ನಮ್ಮ ಸೇವೆಗಳು"
 
+- id: services
+  translation: "ಸೇವೆಗಳು"
+
+- id: mission
+  translation: "ಧ್ಯೇಯ ಮತ್ತು ಉದ್ದೇಶಗಳು"
+
 - id: services_doctor
   translation: "ತಜ್ಞ ವೈದ್ಯರ ಸಮಾಲೋಚನೆ"
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Description }}" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Hero Section -->
+    <section class="bg-sudama-light">
+        <div class="container-fluid p-0 intro">
+            <div class="row g-0">
+                <div class="col-lg-6 mb-5 mb-lg-0 intro-text d-flex flex-column justify-content-center">
+                    <h1 class="display-5 text-sudama-dark mb-4">{{ .Params.hero.title }}</h1>
+                    <a href="https://wa.me/918123686585?text=I%20want%20to%20know%20more%20about%20your%20services"
+                        target="_blank" class="btn btn-sudama-dark btn-lg w-100">{{ T "book_an_appointment" }}</a>
+                </div>
+                <div class="col-lg-6 text-end p-0 intro-image">
+                    <img src="{{ .Params.hero.image }}" alt="Services Hero" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Detail Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                {{ range .Params.services }}
+                <div class="col-lg-6 mb-5" id="{{ .id }}">
+                    <div class="card h-100 border-0 shadow-sm p-4 hover-shadow transition">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="bg-sudama-light p-3 rounded-circle me-3">
+                                <i class="bi {{ .icon }} text-sudama-dark fs-2"></i>
+                            </div>
+                            <h3 class="text-sudama-dark mb-0">{{ .title }}</h3>
+                        </div>
+                        <p class="text-muted fs-5 mb-4">{{ .description }}</p>
+                        <h5 class="text-sudama-dark mb-3">{{ T "details" }}</h5>
+                        <ul class="list-unstyled">
+                            {{ range .features }}
+                            <li class="mb-2 d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                <span>{{ . }}</span>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-sudama-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">{{ T "professional_healthcare_near_you" }}</h2>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://wa.me/918123686585?text=I%20want%20to%20book%20an%20appointment" target="_blank"
+                    class="btn btn-sudama-light btn-lg px-5">{{ T "book_an_appointment" }}</a>
+            </div>
+        </div>
+    </section>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+
+    <style>
+        .hover-shadow:hover {
+            box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1) !important;
+            transform: translateY(-5px);
+        }
+
+        .transition {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</body>
+
+</html>

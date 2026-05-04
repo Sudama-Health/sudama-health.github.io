@@ -1,48 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.Lang }}">
 
-    <head>
-        <title>{{ .Title }}</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        {{ partial "head.html" . }}
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+</head>
 
-    <body>
-        {{ partial "navbar.html" .}}
+<body class="d-flex flex-column min-vh-100 bg-sudama-light">
+    {{ partial "navbar.html" . }}
 
-        <div class="container-fluid background text-white">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <header class="mb-auto text-shadow">
-                            <h1 class="mt-5"><u>{{ .Title }}</u></h1>
-                        </header>
+    <div class="container py-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Header Card -->
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4 text-center">
+                        <h1 class="text-sudama-dark fw-bold mb-0">{{ .Title }}</h1>
                     </div>
                 </div>
-                <div class="row justify-content-center pt-5 m-2">
-                    <div class="col-md-8 col-lg-7 content-background">
-                        {{ .Content }}
-                    </div>
-                    <div class="col-md-4 col-lg-3">
-                        <div class="card text-white bg-dark">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ i18n "apply_now" }}</h5>
-                                <p class="card-text">{{ i18n "interested_in_this_position" }}</p>
-                                <a href="{{.Params.Apply_Link}}" class="btn btn-primary">{{ i18n "apply_now" }}</a>
-                            </div>
+
+                <!-- Content Card -->
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4">
+                        <div class="content-area">
+                            {{ .Content }}
                         </div>
+                    </div>
+                </div>
+
+                <!-- Apply Action Card -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 text-center">
+                        <h5 class="card-title mb-3">{{ i18n "apply_now" }}</h5>
+                        <p class="card-text text-muted mb-4">{{ i18n "interested_in_this_position" }}</p>
+                        <a href="{{.Params.Apply_Link}}" class="btn btn-sudama-dark px-5">{{ i18n "apply_now" }}</a>
                     </div>
                 </div>
             </div>
         </div>
-            {{ partial "footer.html" . }}
-            {{ partial "scripts.html" . }}
+    </div>
 
-        </body>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
 
-    </html>
+</html>

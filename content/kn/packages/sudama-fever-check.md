@@ -23,5 +23,4 @@ params:
 - ಅಲನೈನ್ ಅಮೈನೊ-ಟ್ರಾನ್ಸ್‌ಫರೇಸ್ (ALT) SGPT<span class="badge bg-primary rounded-pill test-amount-style">₹160</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹3580</span> ###
 </div></div>

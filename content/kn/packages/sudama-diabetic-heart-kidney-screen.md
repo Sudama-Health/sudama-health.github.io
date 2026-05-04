@@ -19,5 +19,4 @@ params:
 - ಲಿಪಿಡ್ ಪ್ರೊಫೈಲ್<span class="badge bg-primary rounded-pill test-amount-style">₹600</span>
     {{< /bootstrap-li >}}    
     
-### <span class="badge bg-danger rounded-pill test-total-amount">ಮೊತ್ತ ಎಮ್‌ಆರ್‌ಪಿ ಬೆಲೆ - ₹2220</span> ###
 </div></div>
