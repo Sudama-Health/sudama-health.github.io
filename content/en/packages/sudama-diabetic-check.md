@@ -15,7 +15,6 @@ params:
 - Blood Glucose Fasting (FBS) <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹70</span>
 - Blood Glucose Post prandial (PPBS) <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹70</span>
 - HbA1c (Glycated Haemoglobin) <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹600</span>
-span>
 - Complete Blood Count (CBC) <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹300</span>
 - Complete Urine Examination <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹150</span>
 - Erythrocyte Sedimentation Rate (ESR) <span class="badge bg-primary rounded-pill test-amount-style mx-2">₹120</span>
