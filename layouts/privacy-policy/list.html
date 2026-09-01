@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{ partial "head.html" . }}
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-sudama-light">
+    {{ partial "navbar.html" . }}
+
+    <div class="container py-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Header Card -->
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4 text-center">
+                        <h1 class="text-sudama-dark fw-bold mb-0">{{ .Title }}</h1>
+                        {{ with .Params.last_updated }}<p class="text-muted mb-0">Last updated: {{ . }}</p>{{ end }}
+                    </div>
+                </div>
+
+                <!-- Content Card -->
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-body p-4">
+                        <div class="content-area">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+
+</html>
